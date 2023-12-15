@@ -1,16 +1,13 @@
-package src.main.searching;
+package src.main.searching.binarysearch;
 
 public class BinarySearch {
 
     public static void main(String[] args) {
 
-        boolean isAscending = false;
-//        int[] arr = {1, 2, 3, 4, 5, 6, 7, 9, 13, 22, 24, 26, 28, 35, 43, 43};
-        int[] arr = {16,13,11,10,9,7};
-        int num = 13;
-        if (arr[0] < arr[arr.length - 1]) isAscending = true;
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 9, 13, 22, 24, 26, 28, 35, 43, 43};
+        boolean isAscending = arr[0] < arr[arr.length-1];
 
-        System.out.println(binarySearch(arr, num, isAscending));
+        System.out.println(binarySearch(arr, 13, isAscending));
     }
 
     private static int binarySearch(int[] arr, int target, boolean isAscending) {
